@@ -6,11 +6,11 @@ metadata:
 spec:
   destination:
     namespace: openshift-gitops
-    server: https://api.jclaretm.nasatam.support:6443
+    server: https://kubernetes.default.svc
   project: default
   source:
     path: rhte2023/02_bootstrap/base
-    repoURL: https://github.com/xbryan1/rhte-2023-acm-apps.git
+    repoURL: https://github.com/krbala220/rhte-2023-acm-apps.git
   syncPolicy:
     automated:
       prune: true

@@ -5,3 +5,17 @@ resources:
 - acm_placement.yaml
 - acm_placement_environment.yaml
 - acm_gitopscluster.yaml
+
+patches:
+  - target:
+      kind: ManagedClusterSet
+    patch: |-
+      - op: replace
+        path: /apiVersion
+        value: cluster.open-cluster-management.io/v1beta2
+  - target:
+      kind: ManagedClusterSetBinding
+    patch: |-
+      - op: replace
+        path: /apiVersion
+        value: cluster.open-cluster-management.io/v1beta2
