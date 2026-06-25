@@ -19,7 +19,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/xbryan1/rhte-2023-acm-apps.git
+        repoURL: https://github.com/krbala220/rhte-2023-acm-apps.git
         targetRevision: main
         path: rhte2023/04_deploy_applications/rhte2023-application-04
       destination:

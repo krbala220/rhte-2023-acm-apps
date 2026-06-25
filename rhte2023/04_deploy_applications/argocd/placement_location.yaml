@@ -14,7 +14,7 @@ spec:
             - key: region.open-cluster-management.io
               operator: In
               values:
-                - eu-west-2
+                - in-south-1
         labelSelector:
           matchLabels:
-            area: fringe
+            area: emanai
